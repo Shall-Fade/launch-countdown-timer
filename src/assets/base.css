@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+:root {
+  /* Primary */
+  --c-grayish-blue: hsl(237, 18%, 59%);
+  --c-soft-red: hsl(345, 95%, 68%);
+
+  /* Neutral */
+  --c-white: hsl(0, 0%, 100%);
+  --c-dark-desaturated-blue: hsl(236, 21%, 26%);
+  --c-dark-desaturated-dark-blue: hsl(232deg 21% 21%);
+  --c-very-dark-blue: hsl(235, 16%, 14%);
+  --c-very-dark-black-blue: hsl(234, 17%, 12%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  color: var(--c-white);
+  background: var(--c-very-dark-blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Адаптив */
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 425px;
+    margin: 0 auto;
+  }
+}
